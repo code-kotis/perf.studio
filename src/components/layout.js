@@ -36,9 +36,36 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <p>
+              © {new Date().getFullYear()}, Built with
+              {` `}
+              <a href="https://www.gatsbyjs.org">Gatsby</a>
+            </p>
+
+            <p className="footer__curators">
+              <b>Authors - </b>
+              <a
+                href="https://github.com/gokulkrishh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gokul
+              </a>
+              <a
+                href="https://github.com/hemanth"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Hemanth
+              </a>
+              <a
+                href="https://github.com/shidhincr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shidhin
+              </a>
+            </p>
           </footer>
         </div>
       </>
